@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section {
+            height: 100vh;
+            width: 100%;
+        }
+        header {
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            display: flex;
+            background-color: rgb(4, 4, 4);
+            width: 100%;
+            justify-content: space-between;
+            height: 10vh;
+        }
+        header h1 {
+            color: #fefefe;
+            font-size: 3vw;
+            margin-top: 10px;
+            margin-left: 10px;
+            font-weight: 500;
+            margin-right: 150px;
+        }
+        nav ul {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        ul li {
+            margin-top: 25px;
+            list-style: none;
+        }
+        ul li a {
+            color: rgb(254, 255, 255);
+            text-decoration: none;
+            font-size: 23px;
+            margin-left: -100px;
+            margin-right: 150px;
+        }
+        button {
+            margin-right: 2vw;
+            height: 5vh;
+            width: 8%;
+            margin-top: 20px;
+            background-color: aqua;
+            border: none;
+        }
+        button a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+        #home {
+            width: 100%;
+            background-color: rgb(4, 4, 4);
+            height: 100vh;
+        }
+        .home-l,.home-r {
+            width: 50%;
+            float: left;
+        }
+        .home-l img {
+            margin-top: 7vw;
+            width: 90%;
+            margin-left: 2vw;
+            height: 80vh;
+        }
+        .home-r h1 {
+            margin-top: 20vw;
+            font-size: 4vw;
+            color: #fefefe;
+        }
+        .home-r p {
+            font-size: 1.5vw;
+            color: #fefefe;
+        }
+        #about {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(4, 4, 4);
+            color: #fefefe;
+        }
+        #about h1 {
+            padding-top: 10vw;
+            padding-left: 20px;
+            font-size: 4vw;
+        }
+        #about h3 {
+            padding: 20px;
+            font-size: 2vw;
+            font-weight: 400;
+        }
+        #project {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(4, 4, 4);
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .project {
+            width: 40%;
+            height: 40vh;
+            background-color: rgb(253, 252, 252);
+            margin-left: 30px;
+            margin-top: 50px;
+        }
+        #project h1 {
+            color: #fefefe;
+            padding-top: 10vw;
+            text-align: center;
+            font-size: 3vw;
+        }
+        .project h2 {
+            text-align: center;
+            font-size: 2.5vw;
+            margin-top: 6vw;
+        }
+        .project button {
+            background-color: aqua;
+            width: 30%;
+            margin-left: 200px;
+            margin-top: 3vw;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Lemos Portfolio</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#project">Project</a>
+                    </li>
+                </ul>
+            </nav>
+            <button><a href="#contact">Contact</a></button>
+        </header>
+        <div id="home">
+            <div class="home-l">
+                <img src="att.aIs-h0RKh-HAzI863I6QCUDWgfTs-PSD3WPKBZTIgrY.jpg" alt="">
+            </div>
+            <div class="home-r">
+                <h1>I am Jade Cristian Lemos</h1>
+                <p>I am 21 years old. I am the youngest in my sibling. My hobbies are playing basketball and online games</p>
+            </div>
+        </div>
+        <div id="about">
+            <h1>About this Project</h1>
+            <h3>This webpage serves as a platform to showcase the various projects, achievements, and creations that I have made and successfully completed. The purpose of this site is to share the hard work, dedication, and passion that I’ve put into each endeavor, allowing others to see my growth and progress over time. Whether it’s a school project, personal development, or something I’ve accomplished in my free time, this website reflects my journey of creativity, learning, and achievement.
+
+                Through this platform, I aim to inspire others to pursue their passions and see the value in the process of making and completing tasks. Each project listed here represents not just a finished product, but the lessons learned, the challenges faced, and the satisfaction of completing something meaningful. I hope this webpage will encourage viewers to appreciate the importance of hands-on creation and the rewarding feeling that comes with success.</h3>
+        </div>
+        <div id="project">
+            <h1>My Activity</h1>
+            <div class="container">
+                <div class="project">
+                    <h2>Activity 1: Webpage</h2>
+                    <button><a href="https://lemoswebsite.netlify.app" target="_blank">View Activity</a></button>
+                </div>
+                <div class="project">
+                    <h2>Activity 2: Responsive Webpage</h2>
+                    <button><a href="https://ephemeral-cobbler-3263a1.netlify.app" target="_blank">View Activity</a></button>
+                </div>
+            </div>
+        </div>
+        <div id="contact" style="width: 100%; height: 20vh; display: flex; justify-content: space-around; background-color: rgb(72, 71, 71); color: aqua; padding-top: 3vw; font-size: 1.5vw;">
+            <h1>Facebook: Jade Cristian Lemos</h1>
+            <h1>Instagram: Jade Cristian Lemos</h1>
+            <h1>Email: jlemos97@gmail.com</h1>
+        </div>
+    </section>
+</body>
+</html>
